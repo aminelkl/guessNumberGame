@@ -22,8 +22,8 @@ void playGame()
 	std::vector<int> guesses;
 
 	srand( (unsigned int) time(NULL) );
-	int randomNumber = rand() % 11;
-
+	int randomNumber = (rand() % 10) +1;
+	
 	std::cout << "-- GUESSING THE NUMBER --" << std::endl << "A random number between 0 and 10 is generated, guess it!" << std::endl;
 
 	int guess = 20;
